@@ -3,7 +3,9 @@ const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 const cucumber = require("@badeball/cypress-cucumber-preprocessor");
 
+
 module.exports = defineConfig({
+  projectId: 'cix82q',
   e2e: {
     async setupNodeEvents(on, config) {
       await cucumber.addCucumberPreprocessorPlugin(on, config);
