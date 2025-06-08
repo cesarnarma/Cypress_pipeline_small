@@ -2,7 +2,7 @@ pipeline {
     agent none
 
     tools {
-        nodejs 'node'  // Este bloque debe estar DENTRO de `pipeline {}` y AFUERA de los `stages`
+        nodejs 'Node'  // Este bloque debe estar DENTRO de `pipeline {}` y AFUERA de los `stages`
     }
 
     stages {
