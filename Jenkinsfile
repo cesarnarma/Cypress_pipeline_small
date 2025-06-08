@@ -15,7 +15,7 @@ pipeline {
                     steps {
                         git url: 'https://github.com/cesarnarma/Cypress_pipeline_small.git'
                         bat 'npm install'
-                        bat 'npm update'
+                      //bat 'npm update'
                         bat 'npx cypress run --record --key c805aa5e-810c-487a-85e5-98f6f18e8294 --parallel'
                     }
                 }
@@ -26,11 +26,11 @@ pipeline {
                     steps {
                         git url: 'https://github.com/cesarnarma/Cypress_pipeline_small.git'
                         bat 'npm install'
-                        bat 'npm update'
+                      //bat 'npm update'
                         bat 'npx cypress run --record --key c805aa5e-810c-487a-85e5-98f6f18e8294 --parallel'
                     }
                 }
-                stage('Slave 3') {
+           /*     stage('Slave 3') {
                     agent {
                         label 'Agente1_3'
                     }
@@ -51,7 +51,7 @@ pipeline {
                         bat 'npm update'
                         bat 'npx cypress run --record --key c805aa5e-810c-487a-85e5-98f6f18e8294 --parallel'
                     }
-                }
+                }*/
             }
         }
     }
